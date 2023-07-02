@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+    /* Colors */
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 60px 60px;
+    font-size: 14px;
+    font-family: 'Opens Sans', sans-serif;
+    background: url(./images/bg-desktop.svg) var(--Violet);
+}
+
+header {
+    height: 8vh;
+    margin-bottom: 80px;
+    text-indent: -1000px;
+    background-image: url(./images/logo.svg);
+    background-size: 180px;
+    background-repeat: no-repeat;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+}
+
+img {
+    width: 730px;
+}
+
+figure, section { 
+    background-color: green;
+}
