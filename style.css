@@ -15,10 +15,15 @@
 body {
     width: 100vw;
     height: 100vh;
-    padding: 60px 60px;
-    font-size: 14px;
+    padding: 60px 20px 60px 60px;
+    font-size: 12px;
     font-family: 'Opens Sans', sans-serif;
-    background: url(./images/bg-desktop.svg) var(--Violet);
+    background: url(./images/bg-desktop.svg) var(--Violet) no-repeat;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 1px;
 }
 
 header {
@@ -32,13 +37,102 @@ header {
 
 main {
     display: flex;
-    gap: 20px;
+    gap: 40px;
+    position: relative;
 }
 
 img {
     width: 730px;
 }
 
-figure, section { 
-    background-color: green;
+section#text {
+    padding: 60px 20px;
+    text-align: left;
+}
+
+section#text h2 {
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    font-size: 3em;
+    font-weight: 600;
+    color: #dcdcdc;
+}
+
+section#text p {
+    margin-bottom: 20px;
+    font-size: 1.45em;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: #dcdcdc;
+}
+
+section#text button {
+    width: 180px;
+    height: 50px;
+    border-style: none;
+    border-radius: 80px;
+    box-shadow: 0px 4px 8px #222222;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3em;
+    font-weight: 400;
+    color: var(--Violet);
+    background-color: #dcdcdc;
+    cursor: pointer;
+}
+
+section#text button:hover {
+    background-color: var(--Soft-Magenta);
+    color: #dcdcdc;
+}
+
+/* Social */
+footer#social {
+    position: absolute;
+    left: 1120px;
+    top: 540px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+li {
+    width: 40px;
+    height: 40px;
+    padding: 8px 0;
+    border: 1px solid #dcdcdc;
+    border-radius: 100%;
+    font-size: 20px;
+    color: #dcdcdc;
+    cursor: pointer;
+}
+
+li:hover {
+    border-color: var(--Soft-Magenta);
+    color: var(--Soft-Magenta);
+}
+
+/* Footer Frontend Mentor */
+footer#mentor {
+    width: auto;
+    height: 4vh;
+    margin-top: 50px;
+    text-align: center;
+}
+
+footer#mentor p {
+    font-size: 1.1em;
+    color: #202020;
+}
+
+footer#mentor a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: #dcdcdc;
 }
