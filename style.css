@@ -81,7 +81,7 @@ section#text button {
     cursor: pointer;
 }
 
-section#text button:hover {
+section#text button:active {
     background-color: var(--Soft-Magenta);
     color: #dcdcdc;
 }
@@ -113,7 +113,7 @@ li {
     cursor: pointer;
 }
 
-li:hover {
+li:active {
     border-color: var(--Soft-Magenta);
     color: var(--Soft-Magenta);
 }
@@ -139,27 +139,74 @@ footer#mentor a {
 
 
 /* Responsividade */
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 375px) and (max-width:425px){
     body {
-        width: 100vw;
-        height: 100vh;
-        padding: 40px 20px;
-        background: url(./images/bg-mobile.svg) var(--Violet) no-repeat;
+        width: 100%;
+        padding: 0;
+        font-size: 12px;
+        background-image: url(./images/bg-mobile.svg);
         background-size: contain;
-        border: 1px solid red;
     }
 
-    header {
-        width: 90px;
+    header{
+        height: 50px;
+        margin-top: 20px;
+        background-size: 160px;
+        background-position-x: 30px;
     }
 
     main {
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
-        position: static;
     }
 
     img {
-        width: 400px;
+        width: 340px;
+        position: relative;
+        bottom: 10px;
     }
 
-}
+    section#text {
+        width: auto;
+        text-align: center;
+        padding: 20px;
+    }
+
+    section#text h2 {
+        font-size: 2.4em;
+        margin-bottom: 30px;
+    }
+
+    section#text p {
+        font-size: 1.55em;
+        margin-bottom: 30px;
+  
+    }
+
+    section#text button {
+        width: 260px;
+    }
+
+    footer#social {
+        position: static;
+        width: 350px;
+    }
+
+    footer#mentor {
+        padding: 0 18%;
+        font-size: 1.2em;
+    }
+
+    footer#mentor p {
+        color: #dcdcdc;
+    }
+
+    footer#mentor a {
+        color: var(--Soft-Magenta);
+    }
+    
+}   
