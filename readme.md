@@ -73,8 +73,9 @@ Sinta-se avontade para enviar seu feedback!
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Frontend Mentor - Huddle landing page with a single introductory section
-    Hello! <br>
-    Welcome to my solution to the Huddle Landing Page challenge with a single introductory section on Frontend Mentor (https://www.frontendmentor.io/challenges/huddle-landing-page-with-a -single-introductory-section-B_2Wvxgi0/hub). This Readme will serve as your guide to understanding this project; it will be based on the template provided by the Frontend Mentor platform itself.
+
+Hello! <br>
+Welcome to my solution to the Huddle Landing Page challenge with a single introductory section on Frontend Mentor (https://www.frontendmentor.io/challenges/huddle-landing-page-with-a -single-introductory-section-B_2Wvxgi0/hub). This Readme will serve as your guide to understanding this project; it will be based on the template provided by the Frontend Mentor platform itself.
     <br>
     <br>
     Without further ado, I want to thank you for taking the time to visit my project!
